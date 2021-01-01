@@ -1,0 +1,418 @@
+
+/* for mobile device - landscape and potrait (320 x 482 px) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    
+    /* top header display none */
+    .top-header{
+        width: 100%;
+        display: none;
+    }
+
+    .navigation-header #navbarNav{
+        display: none;
+    }
+
+    /* hamburger menu animation */
+    .mega-menu{
+        width: 100%;
+        height: 100vh;
+        background: black;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
+
+    .mega-menu.show{
+        left: 0;
+    }
+
+    .mega-menu .logo-menu{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mega-menu .logo-menu .menu-title{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2rem;
+        position: absolute;
+        top: 1.5rem;
+        left: 1rem;
+        font-weight: bold;
+    }
+
+    .mega-menu .logo-menu .menu-title span{
+        color: #0265cd;
+    }
+
+    .mega-menu .logo-menu .close-menu{
+        color: #0265cd;
+        position: absolute;
+        right: 1rem;
+        top: 2.1rem;
+        font-size: 1.8rem;
+    }
+
+    .mega-menu .nav-menu{
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mega-menu .nav-menu .nav-link{
+        font-size: 1.5rem;
+    }
+    /* end of menu animation */
+
+    .navigation-header .navbar-brand{
+        font-size: 1.5rem;
+        position: relative;
+        top: 10px;
+    }
+
+    .navigation-header .navbar-nav .nav-list{
+        padding: 50px 0;
+    }
+
+    .navigation-header .navbar-nav .nav-link{
+        color: white;
+    }
+
+    .navigation-header .hamburger-menu{
+        position: relative;
+        top: 10px;
+    }
+
+    .navigation-header .btn-request{
+        display: none;
+    }
+
+    /* hero banner section */
+    .hero-banner{
+        width: 100%;
+        height: 90vh;
+    }
+
+    .hero-banner .hero-content{
+        width: 100%;
+    }
+
+    .hero-banner .hero-content .hero-title{
+        font-size: 1.5rem;
+    }
+
+    .hero-banner .hero-content .hero-text{
+        font-size: 0.7rem;
+    }
+
+    /* delivery option section */
+    .delivery-option{
+        height: auto;
+    }
+
+    .delivery-option .container .option-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .delivery-option .container .option-box .card-box{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px auto;
+        gap: 0%;
+    }
+
+    .delivery-option .option-box .card-img{
+        width: 100px;
+    }
+
+    .delivery-option .option-box .card-img img{
+        width: 100px;
+    }
+
+    /* delivery process section */
+    .deliver-process{
+        padding: 50px 0;
+    }
+
+    .deliver-process .process-title{
+        font-size: 20px;
+    }
+    
+    .deliver-process .process-title::before{
+        content: '';
+        position: absolute;
+        top: 0.6rem;
+        left: 3rem;
+        width: 50px;
+        height: 4px;
+        background: #0265cd;
+    }
+    
+    .deliver-process .process-title::after{
+        top: .6rem;
+        right: 3rem;
+        width: 50px;
+        height: 4px;
+    }
+    
+    .deliver-process .sub-title{
+        font-size: 1.5rem;
+    }
+
+    .deliver-process .process-box{
+        width: 100%;
+        /* grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem; */
+        display: block;
+    }
+
+    .deliver-process .process-box .card .process-img img{
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    .deliver-process .process-box .card .title-card{
+        top: -2rem;
+        min-width: 200px;
+        padding: 10px 0;
+        line-height: 0;
+    }
+    
+    .deliver-process .process-box .card .title-card h3{
+        font-size: 14px;
+    }
+
+    .deliver-process .process-box .card .title-card p{
+        font-size: 10px;
+    }
+
+    /* feature title section */
+    .feature-section{
+        padding: 50px 0;
+    }
+
+    .feature-section .feature-title{
+        font-size: 20px;
+    }
+
+    .feature-section .feature-title::before{
+        top: 0.6rem;
+        left: 1.8rem;
+        width: 50px;
+    }
+    
+    .feature-section .feature-title::after{
+        top: .6rem;
+        right: 1.8rem;
+        width: 50px;
+    }
+    
+    .feature-section .feature-title-sub{
+        font-size: 2rem;
+    }
+
+    .feature-section .feature-text{
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .feature-section .feature-box{
+        margin: 60px auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5rem;
+    }
+
+    .feature-section .feature-box .card{
+        width: 250px;
+        margin: auto;
+    }
+
+    .feature-box .card-img{
+        width: 200px;
+    }
+
+    .feature-box .card-img img{
+        width: 100%;
+    }
+
+    .feature-section .feature-box .card .card-title h3{
+        font-size: 24px;
+    }
+
+    /* form section */
+    .form-section .container{
+        width: 95%;
+        box-shadow: 7px 7px 19px -7px rgba(0,0,0,0.49);
+        background: white;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .form-section .nav-tabs{
+        width: 280px;
+    }
+    
+    .form-section .form-box{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+        padding: 10px 0;
+    }
+
+    .form-section .form-box .nav-link{
+        font-size: 12px;
+    }
+
+    .form-section .my-form .tab-content .personal-data label{
+        font-size: 14px;
+    }
+
+    .form-section .personal-data .details{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: .5rem;
+        width: 280px;
+    }
+
+    .form-section input{
+        font-size: 12px;
+    }
+
+    .form-section .my-form .tab-content .shipping-data label{
+        font-size: 14px;
+    }
+
+    .form-section .shipping-data .first-row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: .5rem;
+        width: 280px;
+    }
+
+    .form-section .shipping-data .second-row{
+        margin-top: .5rem;
+        width: 280px;
+    }
+
+    .form-section .shipping-data .sub-second-row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5rem;
+        width: 280px;
+    }
+
+    .form-section .shipping-data .sub-second-row .half-input{
+        grid-gap: .5rem;
+    }
+
+    .form-section .shipping-data .third-row > div{
+        margin-right: 5px;
+        text-align: center;
+    }
+
+    .form-section .form-btn{
+        position: relative;
+        right: 5px;
+    }
+
+    .form-section .form-img-text{
+        padding: 50px 40px;
+        top: 0;
+        right: 0;
+        height: 30rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* map section */
+    .map-section .map-content{
+        width: 60%;
+        bottom: 24rem;
+        left: 4rem;
+    }
+
+    .map-section .map-icon{
+        bottom: 30rem;
+        font-size: 2rem;
+    }
+
+    .map-section .map-content ul li{
+        padding-left: 20px;
+        padding-top: 0px;
+        font-size: 12px;
+    }
+
+    .map-section .map-content ul li:first-child{
+        padding: 20px 20px;
+    }
+
+    /* footer section */
+    .footer-section{
+        height: auto;
+    }
+
+    .footer-section .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 100px;
+    }
+
+    .footer-section .footer-nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+    }
+
+    .footer-section h5{
+        font-size: 15px;
+    }
+
+    .footer-section .footer-nav .nav-item .nav-link{
+        font-size: 10px;
+    }
+
+    .footer-section .footer-booking{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .footer-section .footer-booking h1{
+        font-size: 50px;
+    }
+    
+    .footer-section .footer-booking p{
+        font-size: 10px;
+        margin-top: 0px;
+        line-height: 20px;
+    }
+
+    .footer-section .footer-booking .footer-social-icon{
+        justify-content: space-evenly;
+        margin-right: 0px;
+    }
+
+    .footer-section .footer-booking .footer-social-icon > div{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .navigation-header .hamburger-menu{
+        display: none;
+    }
+
+    .navigation-header .mega-menu{
+        display: none;
+    }
+}
